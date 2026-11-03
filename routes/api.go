@@ -18,7 +18,7 @@ func RegisterAPIRoutes(app *fiber.App) {
 
 	// Public project requests (landing page form)
 	requests := v1.Group("/requests")
-	requests.Post("/", (&controllers.ProjectRequestController{}).Store)
+	requests.Post("", (&controllers.ProjectRequestController{}).Store)
 
 	// Add more routes here...
 }

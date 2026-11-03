@@ -5,7 +5,7 @@ import (
 )
 
 func Register(app *fiber.App) {
-	// Register all route files
-	RegisterWebRoutes(app)
+	// API routes must be registered before the SPA fallback in web.go.
 	RegisterAPIRoutes(app)
+	RegisterWebRoutes(app)
 }

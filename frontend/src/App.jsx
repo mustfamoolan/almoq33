@@ -571,7 +571,7 @@ export default function App() {
                   لماذا almoq3
                 </span>
                 <h2 className="mt-3 text-3xl font-bold leading-snug tracking-tight sm:text-4xl">
-                  نبنيك نظاماً يناسب عملك،
+                  نبني لك نظاماً يناسب عملك،
                   <br />
                   لا العكس.
                 </h2>
