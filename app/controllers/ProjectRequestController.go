@@ -45,7 +45,7 @@ func (pc *ProjectRequestController) Store(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusUnprocessableEntity).JSON(fiber.Map{"error": "رقم التواصل غير صالح"})
 	}
 	if utf8.RuneCountInString(in.Message) < 10 {
-		return c.Status(fiber.StatusUnprocessableEntity).JSON(fiber.Map{"error": "اكتب وصفاً مختصراً للمشروع (10 أحرف على الأقل)"})
+		return c.Status(fiber.StatusUnprocessableEntity).JSON(fiber.Map{"error": "اكتب ملاحظاتك (10 أحرف على الأقل)"})
 	}
 	if utf8.RuneCountInString(in.Message) > 4000 {
 		return c.Status(fiber.StatusUnprocessableEntity).JSON(fiber.Map{"error": "الوصف طويل جداً"})

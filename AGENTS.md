@@ -44,6 +44,10 @@
 - Landing page implemented (Arabic RTL): hero, products, why-us, process, FAQ, project
   request form, CTA and footer. Brand navy `#152D47` + cyan `#00C3F1`, logo at
   `frontend/public/logo.png`.
+- Public page is now **software-sales focused**: product catalog (POS, clinics, schools,
+  restaurants, e-commerce, delivery), company profile, buying steps, FAQ and a
+  “request a price offer” form. No technical, admin-panel, WhatsApp or licensing content.
+- Product names, prices and screenshots are still placeholders; waiting on the real list.
 - Public form posts to `POST /api/v1/requests` and stores rows in `project_requests`.
 - Production Dockerfile (multi-stage: Node → Go → Alpine, non-root user).
 - Compose stack: app + PostgreSQL + Redis, app bound to `127.0.0.1:8081`.
@@ -61,3 +65,6 @@
   GET API endpoints return `index.html`.
 - UI is Arabic-first (RTL). Use the brand tokens `brand` (navy) and `brand-cyan`; logo at
   `frontend/public/logo.png`. Keep copy simple and client-facing.
+- The public page sells **software products and the company only**. Never mention the tech
+  stack, admin panel, WhatsApp service, licensing/activation, databases or internal systems.
+  Those belong to later internal phases.
