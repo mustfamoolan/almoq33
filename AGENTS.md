@@ -25,7 +25,9 @@
   - `almoq3.com`, `www.almoq3.com` → `127.0.0.1:8081` (this project)
   - `ai.almoq3.com` → `127.0.0.1:8080` (`whtsappai`)
 - **This project deploys to:** `/opt/almoq33`, publishes `127.0.0.1:8081`.
-- **Deploy:** `git pull && docker compose up -d --build`.
+- **Deploy:** `git pull && docker compose up -d --build` (run in `/opt/almoq33`).
+- **Secrets:** `/opt/almoq33/.env` (mode 600) holds `APP_KEY`, `DB_PASSWORD`, `DB_DATABASE`, `DB_USERNAME`. Never commit it.
+- **Rollback:** `/root/whtsappai/docker-compose.yml.bak-2026-11-03` restores the old Caddy setup.
 - **DNS:** Hostinger nameservers (`ns1/ns2.dns-parking.com`). All A records point to the VPS.
 
 ## Product scope
