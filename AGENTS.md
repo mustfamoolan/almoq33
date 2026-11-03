@@ -57,4 +57,7 @@
 - Do not expose database or Redis ports publicly.
 - Frontend source lives in `frontend/`; build output goes to `public/`.
 - API routes live in `routes/api.go`; web/static routes in `routes/web.go`.
-- UI design will be handled in a dedicated phase — do not invent branding beyond the current `almoq3` wordmark.
+- Register API routes **before** the SPA wildcard fallback (`routes/routes.go`), otherwise
+  GET API endpoints return `index.html`.
+- UI is Arabic-first (RTL). Use the brand tokens `brand` (navy) and `brand-cyan`; logo at
+  `frontend/public/logo.png`. Keep copy simple and client-facing.

@@ -374,7 +374,10 @@ export default function App() {
               <h1 className="mt-6 text-4xl font-bold leading-[1.2] tracking-tight text-brand sm:text-5xl lg:text-[3.4rem]">
                 برمجيات جاهزة،
                 <br className="hidden sm:block" /> ومشاريع تُبنى{' '}
-                <span className="border-b-4 border-brand-cyan/70">على مقاسك</span>.
+                <span className="whitespace-nowrap border-b-4 border-brand-cyan/70">
+                  على مقاسك
+                </span>
+                .
               </h1>
 
               <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 sm:text-lg">
