@@ -1,0 +1,38 @@
+# Binaries
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Dependency directories
+vendor/
+node_modules/
+frontend/node_modules/
+
+# Build output
+public/
+frontend/dist/
+
+# Runtime data
+storage/logs/*
+storage/uploads/*
+storage/framework/cache/*
+!storage/logs/.gitkeep
+!storage/uploads/.gitkeep
+!storage/framework/cache/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
