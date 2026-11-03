@@ -3,7 +3,7 @@
 .github
 node_modules
 frontend/node_modules
-public
+/public
 storage/logs
 storage/uploads
 storage/framework

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 
+	"almoq33/app/models"
 	"almoq33/bootstrap"
 	"almoq33/config"
 	"almoq33/routes"
@@ -22,6 +23,11 @@ func main() {
 
 	// 2. Initialize Database
 	bootstrap.InitializeDatabase()
+
+	// 2.1 Migrate application models
+	if err := bootstrap.DB.AutoMigrate(&models.ProjectRequest{}); err != nil {
+		log.Fatalf("failed to migrate database: %v", err)
+	}
 
 	// 3. Initialize Fiber
 	app := fiber.New(fiber.Config{

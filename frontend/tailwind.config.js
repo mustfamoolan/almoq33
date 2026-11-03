@@ -15,6 +15,12 @@ export default {
     },
     extend: {
       colors: {
+        brand: {
+          DEFAULT: "#152D47",
+          dark: "#0D1F33",
+          cyan: "#00C3F1",
+          sky: "#E9F9FE",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -48,6 +54,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontFamily: {
+        sans: ['"IBM Plex Sans Arabic"', "ui-sans-serif", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

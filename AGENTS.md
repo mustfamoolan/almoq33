@@ -41,11 +41,14 @@
 
 ## Current status (2026-11-03)
 
-- Project scaffolded with `almoq3 new almoq33`.
-- Single landing page displaying the `almoq3` wordmark only (deployment smoke test).
+- Landing page implemented (Arabic RTL): hero, products, why-us, process, FAQ, project
+  request form, CTA and footer. Brand navy `#152D47` + cyan `#00C3F1`, logo at
+  `frontend/public/logo.png`.
+- Public form posts to `POST /api/v1/requests` and stores rows in `project_requests`.
 - Production Dockerfile (multi-stage: Node → Go → Alpine, non-root user).
 - Compose stack: app + PostgreSQL + Redis, app bound to `127.0.0.1:8081`.
 - `bootstrap/config.go` tolerates a missing `.env` and reads process environment variables.
+- `frontend/postcss.config.js` is required for Tailwind processing (the CLI scaffold omits it).
 
 ## Conventions
 
